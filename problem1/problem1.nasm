@@ -1,6 +1,8 @@
+; If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+; Find the sum of all the multiples of 3 or 5 below 1000.    
+    
     extern  printf
     extern  exit
-    ; default rel
 
     SECTION .data
 sum:        dd  0
@@ -40,12 +42,5 @@ endMain:
     mov     rax, 0
     call    printf
     pop     rbp
-    ; mov     rax, [sum]
-    ; push    rax
-    ; push    sumMsg
-    ; call    printf
-    ; add     rsp, 8
-    ; ret
 
-    ; exit
     call    exit
