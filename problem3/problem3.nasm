@@ -12,6 +12,10 @@
 ; I was getting quite frustrated at the end until I realized I had typo'd the
 ; number I was supposed to be testing the prime factor for.
 ;
+; I can think of at least one optimization for the CPU by saving the last
+; quotient from testOverLimit. There's probably a better algorithm overall
+; for this, but I'm not mainly a math guy.
+;
 ; % time ./problem3
 ; The largest factor is: 6857.
 ; ./problem3  0.13s user 0.00s system 99% cpu 0.126 total
@@ -54,7 +58,6 @@ main:
 
 ; provide a starting number and incrementally test new numbers until a new
 ; prime is found, adding it to the array of primes
-; modifies:
 getPrime:
     push    rsi
     push    r8
