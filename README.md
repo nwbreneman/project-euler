@@ -10,4 +10,6 @@ gcc -o {outputfile} {filename.o}
 
 On Arch Linux, I was getting compilation errors related to the `.data` section. I had to add the `-static` flag to gcc.
 
+I am using NASM because I recently learned x86 assembly using MASM, but am a Linux fan and user. I'm taking this as an opportunity to learn about 64-bit assembly programming on Linux as well.
+
 ![euler-profile](https://projecteuler.net/profile/nwbreneman.png)
